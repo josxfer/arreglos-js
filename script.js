@@ -8,6 +8,19 @@ if (opcion === 1) {
         numbers.push(x)
     }
     console.log(numbers);
-}else{
+}else if (opcion === 2) {
+    let numbers = prompt("Ingresa varios numeros separados por comas para guardarlos en el array:");
+    const array_numbers = numbers.split(",");
+    console.log(array_numbers);
+    
+}else if (opcion === 3) {
+    const numbers = [10, 40, 30, 20, 15, 5];
+    numbers.sort((a, b) =>{
+        return a -b;
+    });
+    console.log(numbers);
+}
+
+else{
     document.write("Ingresa una opción válida")
 }
